@@ -1,0 +1,29 @@
+yarn init -y
+yarn add express
+yarn add typescript -D
+yarn tsc --init -> CRIA TSCONFIG.JSON 
+
+-- Criar pasta src 
+	-- criar file server.ts
+
+-- Setar ("rootDir": "./src") dentro de tsconfig.json
+-- Setar ("outDir": "./dist") dentro de tsconfig.json
+
+yarn tsc -> cria diretorio (dist) que contém arquivo js compilado
+
+yarn add @types/express
+
+yarn tsc -> compila o arquivo .ts para .js
+yarn build -> faz o build do projeto
+
+-- package.json : criar um script para teste{
+	
+	"scripts": {
+    "build": "tsc",
+    "dev:server": "ts-node-dev src/server.ts" 
+  },
+}
+
+yarn add ts-node-dev -> para fazer o recaregamento continuo da aplicação 
+
+
